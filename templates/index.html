@@ -1,0 +1,8 @@
+<title>Digital Art Portfolio - Louis Kabelka</title>
+{% extends "layout.html" %}
+{% block body %}
+
+{% for image in images %}
+  <img src="{{ url_for('static', filename='art/' + image) }}">
+{% endfor %}
+{% endblock %}
